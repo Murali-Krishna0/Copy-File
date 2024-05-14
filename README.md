@@ -31,17 +31,21 @@ End the program.
 #Developed by: MURALI KRISHNA S
 #Register Number: 212223230129
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+def copy(fname,newfile):
+  with open(fname) as fp:
+    with open(newfile,'w') as fp1:
+      data=fp.read()
+      fp1.write(data)
+copy("file1.txt","python.txt")      
+
 ```
 
 
 #OUTPUT:
-![image](https://github.com/Murali-Krishna0/Copy-File/assets/149054535/973d3766-b829-40cb-8614-6cee94d05f2f)
+![image](https://github.com/Murali-Krishna0/Copy-File/assets/149054535/6d43a57a-8b24-465b-907b-701dd2c86ec9)
+![image](https://github.com/Murali-Krishna0/Copy-File/assets/149054535/2b335f18-0aaa-4cc6-b288-0495ab988c9e)
+![image](https://github.com/Murali-Krishna0/Copy-File/assets/149054535/92f1436b-2b79-47a2-bd9d-8aad9b2d1697)
+
 
 
 
